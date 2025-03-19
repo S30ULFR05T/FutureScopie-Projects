@@ -89,7 +89,7 @@
 
         .unselected {
             padding: 10px 16px;
-            border: 1px solid #737373;
+            border: 1px solid #a3a3a3;
             text-decoration: none;
             color: #333;
         }
@@ -97,6 +97,43 @@
         .unselected:hover {
             color: #327fc7;
             border-color: #327fc7;
+        }
+
+        .box-container {            /* can be removed later if needed */
+            padding-bottom: 50px;
+        }
+
+        .box-1 {
+            margin-right: 266px;
+            margin-left: 266px;
+            margin-bottom: 70px;
+            border: 1px solid #ddd;
+            background-color: white;
+            border-radius: 4px;
+            text-align: center;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            width: 980px;
+        }
+
+        .box-1 h4 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .sub-heading {
+            font-weight: 300;
+            padding: 30px 120px;
+            font-size: 20px;
+        }
+
+        .sub-heading a {
+            text-decoration: none;
+        }
+
+        .details {
+            font-size: 14px;
+            padding: 0 120px;
         }
     </style>
 </head>
@@ -129,6 +166,47 @@
                     <li><a href="#user-site" class="selected">User or organization site</a></li>
                     <li><a href="#project-site" class="unselected">Project site</a></li>
                   </ul>
+        </div>
+
+        <div class="box-container">
+            <div class="box-1">
+                <h4>Create a repository</h4>
+                <p class="sub-heading">Head over to <a href="https://github.com">GitHub</a> and <a href="https://github.com/new">create a new public repository</a> named <em>username</em>.github.io, where <em>username</em> is your username (or organization name) on GitHub.</p>
+                <p class="details">If the first part of the repository doesn’t exactly match your username, it won’t work, so make sure to get it right.</p>
+            </div>
+
+            <div class="box-1" style="padding-bottom: 0;">
+                <h4>What git client are you using?</h4>
+                <ul class="tabs" style="margin-bottom: 60px;">
+                    <li><a href="#user-site" class="selected">A Terminal</a></li>
+                    <li><a href="#project-site" class="unselected">GitHub Desktop</a></li>
+                    <li><a href="#project-site" class="unselected">I don't know</a></li>
+                  </ul>
+            </div>
+
+            <div class="box-1">
+                <h4>Create a repository</h4>
+                <p class="sub-heading">Go to the folder where you want to store your project, and clone the new repository:</p>
+                <img src="clone the repo.png" alt="Clone the Repository" style="height: 96px;">
+            </div>
+
+            <div class="box-1">
+                <h4>Hello World</h4>
+                <p class="sub-heading">Enter the project folder and add an index.html file:</p>
+                <img src="hello world.png" alt="Hello World GITHUB" style="height: 125px;">
+            </div>
+
+            <div class="box-1">
+                <h4>Push it</h4>
+                <p class="sub-heading">Add, commit, and push your changes:</p>
+                <img src="push.png" alt="GITHUB Push It" style="height: 154px;">
+            </div>
+
+            <div class="box-1">
+                <h4>…and you're done!</h4>
+                <p class="sub-heading">Fire up a browser and go to <strong>https://<em>username</em>.github.io</strong>.</p>
+                <img src="done.png" alt="Done" style="height: 120px;">
+            </div>
         </div>
     </div>
 </body>
